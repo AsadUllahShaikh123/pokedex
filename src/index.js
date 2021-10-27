@@ -9,6 +9,7 @@ let history = createBrowserHistory();
 let App=()=>
 {
     return(
+        // Instead of using this method we can also use useParams hook to do same action 
           <Router history={history}>
               <Switch>
                   <Route exact path="/" render={(props) => <Pokedex {...props}/>}/>  
