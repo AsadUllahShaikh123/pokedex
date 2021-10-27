@@ -35,7 +35,7 @@ function Pokedex(props) {
         // console.log(id,"id");
         console.log(pokemonData[pokemonId]);
         return (
-            <Grid item xs={12} lg={4} key={pokemonId}>
+            <Grid item xs={12} lg={4} md={6} key={pokemonId}>
                 <Card onClick={() => history.push(pokemonId)} style={{display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center'}}>
                     <CardMedia
                         image={sprite}
