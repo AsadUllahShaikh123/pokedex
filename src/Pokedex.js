@@ -75,7 +75,7 @@ function Pokedex(props) {
 
                         <Grid container  spacing={2}  >
                             {Object.keys(pokemonData).map((pokemonId) =>
-                                pokemonData[pokemonId].name.includes(filter) &&
+                                pokemonData[pokemonId].name.includes(filter.toLowerCase()) &&
                                 getPokemonCard(pokemonId))}
 
                         </Grid>
